@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="/images/logoPreto.png">
+
+		<title>Chat</title>
+		<link rel="stylesheet" href="css/style.css">
+		<!-- Principal CSS do Bootstrap -->
+		<link href="./bootstrap.min.css" rel="stylesheet">
+
+		<!-- Estilos customizados para esse template -->
+		<link href="./dashboard.css" rel="stylesheet">
+		<style type="text/css">/* Chart.js */
+			@-webkit-keyframes chartjs-render-animation{from{opacity:0.99}to{opacity:1}}@keyframes chartjs-render-animation{from{opacity:0.99}to{opacity:1}}.chartjs-render-monitor{-webkit-animation:chartjs-render-animation 0.001s;animation:chartjs-render-animation 0.001s;}
+		</style>
+	</head>
+
+	<body cz-shortcut-listen="true">
+		<nav class="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
+			<a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#">Nome do Usuario</a>
+			<ul class="navbar-nav px-3">
+				<li class="nav-item text-nowrap">
+					<a class="nav-link" href="#">Sair</a>
+				</li>
+			</ul>
+		</nav>
+
+		<div class="container-fluid">
+			<div class="row">
+				<nav class="col-md-2 d-none d-md-block bg-light sidebar">
+					<div class="sidebar-sticky">
+						<ul class="nav flex-column">
+							<li class="nav-item">
+								<a class="nav-link active" href="#">
+									Nome do Usuario
+								</a>
+							</li>
+						</ul>
+					</div>
+			</div>
+		</div>
+
+		<main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4"><div class="chartjs-size-monitor" style="position: absolute; left: 0px; top: 0px; right: 0px; bottom: 0px; overflow: hidden; pointer-events: none; visibility: hidden; z-index: -1;">
+			<div class="chartjs-size-monitor-expand" style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;">
+				<div style="position:absolute;width:1000000px;height:1000000px;left:0;top:0">
+				</div>
+			</div>
+			<div class="chartjs-size-monitor-shrink" style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;">
+				<div style="position:absolute;width:200%;height:200%;left:0; top:0">
+				</div>
+			</div>
+		</div>
+			<div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+				<div id="liveChat">
+					<header class="clearfix">
+						<h4 clas="nameUser" id="ChatUser2">Chat User 2</h4>
+					</header>
+					<div class="chat" id="chatRight">
+						<div class="chatHistory" id="chatHistory1">
+							<!-- jquery gera o HTML -->
+						</div>
+						<form action="#" method="post">
+							<fieldset>
+								<input type="text" placeholder="Digite sua menssagem…" id="messegeRight" autofocus>
+								<button type="button" id="submitRight" class="buttonSubmit">Enviar</button>
+							</fieldset>
+						</form>
+					</div>
+				</div>
+			</div>
+		</main>
+
+
+		<!-- Principal JavaScript do Bootstrap
+		================================================== -->
+		<!-- Foi colocado no final para a página carregar mais rápido -->
+		<script src="./jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+		<script src="./popper.min.js"></script>
+		<script src="./bootstrap.min.js"></script>
+
+		<!-- Ícones -->
+		<script src="./feather.min.js"></script>
+		<script>
+			feather.replace()
+		</script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script  src="js/index.js"></script>
+	</body>
+</html>
