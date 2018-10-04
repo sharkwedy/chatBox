@@ -24,13 +24,13 @@
   </head>
 
   <body class="text-center" >
-    <form class="form-signin">
+    <form class="form-signin" method="post" action="/login">
       <img class="mb-4" id="logoUbots" src="/images/logoUbots.png" alt="" width="310" height="100">
       <h1 class="h3 mb-3 font-weight-normal" id="textWhite">Login</h1>
       <label for="inputUserName" class="sr-only">Nome do Usuario</label>
-      <input type="text" id="inputUserName" class="form-control" placeholder="Usuario" required="" autofocus="">
+      <input type="text" name="username" id="inputUserName" class="form-control" placeholder="Usuario" required="" autofocus="">
       <label for="inputPassword" class="sr-only">Senha</label>
-      <input type="password" id="inputPassword" class="form-control" placeholder="Senha" required="">
+      <input type="password" name="password" id="inputPassword" class="form-control" placeholder="Senha" required="">
       <button class="btn btn-lg btn-primary btn-block yellowButtons" type="submit">Login</button>
       <a href="/users" class="linkButtom">
         <button class="btn btn-lg btn-primary btn-block yellowButtons" type="button">Criar Cadastro</button>
